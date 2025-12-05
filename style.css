@@ -33,6 +33,43 @@ min-height: 100vh;
     transition: 0.3s; 
     position: relative;
 }
+/* MOBILE HAMBURGER RESPONSIVE FIX */
+@media (max-width: 768px) {
+    .nav-links {
+        position: fixed;
+        left: -250px; /* HIDDEN default */
+        top: 0;
+        width: 230px;
+        height: 100vh;
+        background: #111;
+        flex-direction: column;
+        padding-top: 50px;
+        gap: 20px;
+    }
+
+    .nav-links.show {
+        left: 0;
+    }
+
+    .hamburger {
+        display: block;
+        font-size: 30px;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+        color: white;
+    }
+}
+
+/* DESKTOP */
+@media (min-width: 769px) {
+    .hamburger {
+        display: none;
+    }
+}
+
+
 .left-container, .right-container{
     height: 100vh;
     display: flex;

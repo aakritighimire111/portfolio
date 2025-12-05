@@ -19,7 +19,10 @@
             <li><a href="#skill">Skills</a></li>
 
         </ul>   
-        
+         <!-- ✅ HAMBURGER MENU BUTTON -->
+        <div class="hamburger">
+            <i class="fa-solid fa-bars"></i>
+        </div>
 
         <div class="left-container">
             <div class="icons">
@@ -130,6 +133,17 @@
   </div>
 
 </section>
+<!-- ✅ JAVASCRIPT FOR HAMBURGER MENU -->
+    <script>
+const hamburger = document.querySelector(".hamburger");
+const navLinks = document.querySelector(".nav-links");
+
+hamburger.addEventListener("click", () => {
+    navLinks.classList.toggle("show");
+    hamburger.classList.toggle("active"); // optional X animation
+});
+</script>
+
 
 
 
